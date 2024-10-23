@@ -229,16 +229,11 @@ const BrowserScreen = ({ navigation, route }) => {
             </TouchableOpacity>
 
             <TouchableOpacity onPress={addNewTab} style={styles.button}>
-              <Icon name="add" size={30} color="#fff" />
-              {/*<Text style={styles.buttonText}>New Tab</Text>*/}
+              <Text style={styles.buttonText}>New Tab</Text>
             </TouchableOpacity>
 
-            
-
             <TouchableOpacity onPress={() => navigation.navigate('Settings', { isAdBlockingEnabled, isTrackingBlockingEnabled, isDarkMode, useAdGuardDNS })} style={styles.button}>
-              <Icon name="settings" size={30} color="#fff" />
-              {/*<Text style={styles.buttonText}>Settings</Text>*/}
-
+              <Text style={styles.buttonText}>Settings</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -345,12 +340,10 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     alignItems: 'center',
-    flexDirection: 'row',
   },
   buttonText: {
     color: '#fff',
     fontSize: 16,
-    marginLeft: 5,
   },
   settingOption: {
     flexDirection: 'row',
